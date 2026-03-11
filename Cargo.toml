@@ -1,0 +1,23 @@
+cargo-features = ["panic-immediate-abort"]
+
+[package]
+name = "Grave"
+version = "0.1.0"
+edition = "2024"
+
+[profile.release]
+opt-level = "z"
+lto = true
+panic = "immediate-abort"
+strip = true
+codegen-units = 1
+
+[dependencies]
+obfstr = "0.4.4"
+zeroize = { version = "1.8.1", default-features = false, features = ["alloc"] }
+rustc-hash = { version = "2.1.1", default-features = false }
+windows-sys = { version = "0.61.0", features = ["Win32_Foundation", "Win32_System_Threading", "Win32_System_Diagnostics_Debug", "Win32_Security", "Win32_System_WindowsProgramming", "Win32_System_Memory", "Win32_System_Console", "Win32_Storage_FileSystem", "Win32_System_LibraryLoader", "Win32_UI_WindowsAndMessaging", "Win32_System_Registry", "Win32_System_SystemInformation", "Win32_System_Time", "Win32_UI_Shell"] }
+
+[build-dependencies]
+chrono = "0.4"
+rand = "0.8"
