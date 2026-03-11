@@ -10,6 +10,7 @@ This is my attempt at a shellcode loader in Rust (a language I have little to no
  - Fetching shellcode from a remote host
  - HTTP/S support
  - Earlybird shellcode injection
+ - Anti-analysis/vm/virustotal via Username
 
 ## Building
 ```Powershell
