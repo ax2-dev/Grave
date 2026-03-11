@@ -18,6 +18,6 @@ cargo +nightly build --release -Z build-std=std,panic_abort --target x86_64-pc-w
 ```
 
 ## Credit:
-Maldev Academy (Early Bird injection, IAT obfuscation/stuffing)
-Opencode (Debugging and figuring out what I had written at 4 am previously)
-https://github.com/6nz/virustotal-vm-blacklist/blob/main/pc_username_list.txt (Usernames List)
+ - Maldev Academy (Early Bird injection, IAT obfuscation/stuffing)
+ - Opencode (Debugging and figuring out what I had written at 4 am previously)
+ - https://github.com/6nz/virustotal-vm-blacklist/blob/main/pc_username_list.txt (Usernames List)
